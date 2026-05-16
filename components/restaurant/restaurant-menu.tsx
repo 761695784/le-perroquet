@@ -42,7 +42,7 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
   },
   {
     name: "Petit Déjeuner Casamançais",
-    description: "Sombi crémeux au lait de coco et vanille, pain beurré, café Touba parfumé — le réveil authentique de Ziguinchor",
+    description: "Sombi crémeux au lait de coco et vanille, pain beurré, café Touba parfumé a la vanille, le réveil authentique de Ziguinchor",
     priceFCFA: 2500,
     priceEUR: "4",
     badge: "specialite",
