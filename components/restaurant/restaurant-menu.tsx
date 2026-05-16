@@ -32,38 +32,38 @@ const categories: { id: MenuCategory; label: string }[] = [
 ]
 
 const menuItems: Record<MenuCategory, MenuItem[]> = {
-  "petit-dejeuner": [
-    {
-      name: "Petit Dejeuner Continental",
-      description: "Pain frais, beurre, confiture, cafe ou the, jus de fruits",
-      priceFCFA: 2000,
-      priceEUR: "3",
-      image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&q=80",
-    },
-    {
-      name: "Petit Dejeuner Senegalais",
-      description: "Bouillie de mil, pain beurre, cafe Touba ou the attaya, oeufs",
-      priceFCFA: 2500,
-      priceEUR: "4",
-      badge: "specialite",
-      image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&q=80",
-    },
-    {
-      name: "Oeufs au choix",
-      description: "Brouilles, au plat ou omelette, servis avec pain grille et cafe",
-      priceFCFA: 1500,
-      priceEUR: "2",
-      image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&q=80",
-    },
-    {
-      name: "Jus de fruits frais",
-      description: "Bissap, gingembre, ditakh, bouye — jus 100% maison",
-      priceFCFA: 500,
-      priceEUR: "0,75",
-      badge: "maison",
-      image: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&q=80",
-    },
-  ],
+"petit-dejeuner": [
+  {
+    name: "Petit Déjeuner Continental",
+    description: "Pain frais croustillant, beurre et confiture maison, jus de bissap ou de gingembre, café ou thé",
+    priceFCFA: 2000,
+    priceEUR: "3",
+    image: "/images/petit-dejeuner-continental.png",
+  },
+  {
+    name: "Petit Déjeuner Casamançais",
+    description: "Sombi crémeux au lait de coco et vanille, pain beurré, café Touba parfumé — le réveil authentique de Ziguinchor",
+    priceFCFA: 2500,
+    priceEUR: "4",
+    badge: "specialite",
+    image: "/images/petit-dej-casamancais.png",
+  },
+  {
+    name: "Œufs au Choix",
+    description: "Omelette épicée aux oignons et piments doux, ou œufs au plat, servis avec pain grillé et café Touba",
+    priceFCFA: 1500,
+    priceEUR: "2",
+    image: "/images/petit-dej-oeuf-au-choix.png",
+  },
+  {
+    name: "Sombi Guerté",
+    description: "Bouillie traditionnelle de riz à l'arachide, mijotée au lait et parfumée à la vanille — le petit déjeuner de l'âme sénégalaise",
+    priceFCFA: 1500,
+    priceEUR: "2",
+    badge: "maison",
+    image: "/images/sombi-guerté.png",
+  },
+],
   entrees: [
     {
       name: "Pastels Casamancais",
@@ -71,7 +71,7 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
       priceFCFA: 2500,
       priceEUR: "4",
       badge: "specialite",
-      image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80",
+      image: "/images/pastel.jpeg",
     },
     {
       name: "Fatayas Maison",
@@ -79,14 +79,14 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
       priceFCFA: 2000,
       priceEUR: "3",
       badge: "maison",
-      image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&q=80",
+      image: "/images/fataya.jpg",
     },
     {
       name: "Salade Senegalaise",
       description: "Tomates, oignons, poivrons, avocat, vinaigrette citronnee au piment doux",
       priceFCFA: 3000,
       priceEUR: "4,50",
-      image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80",
+      image: "/images/salade-de-fruit.webp",
     },
     {
       name: "Assiette Casamance",
@@ -94,7 +94,7 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
       priceFCFA: 4500,
       priceEUR: "7",
       badge: "coup-de-coeur",
-      image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+      image: "/images/salade-de-fruit-frais.jpg",
     },
     {
       name: "Crevettes Sautees a l'Ail",
@@ -102,17 +102,17 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
       priceFCFA: 5500,
       priceEUR: "8",
       badge: "signature",
-      image: "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=400&q=80",
+      image: "/images/Crevettes-Grillees.jpg",
     },
   ],
   poissons: [
     {
       name: "Thieboudienne",
-      description: "Le plat national — riz rouge au poisson braise, legumes, sauce tomate",
+      description: "Le plat national du Senegal, riz rouge au poisson braise, legumes, sauce tomate",
       priceFCFA: 4000,
       priceEUR: "6",
       badge: "plat-national",
-      image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&q=80",
+      image: "/images/Thieboudieune-rouge.jfif",
     },
     {
       name: "Yassa Poisson",
@@ -120,7 +120,7 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
       priceFCFA: 5000,
       priceEUR: "7,50",
       badge: "specialite",
-      image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&q=80",
+      image: "/images/yassa-poisson.jpg",
     },
     {
       name: "Crevettes Grillees du Fleuve",
@@ -128,7 +128,7 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
       priceFCFA: 7500,
       priceEUR: "11",
       badge: "signature",
-      image: "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=400&q=80",
+      image: "/images/Crevettes-Grillees.jpg",
     },
     {
       name: "Capitaine Braise Casamancais",
@@ -136,21 +136,21 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
       priceFCFA: 6000,
       priceEUR: "9",
       badge: "specialite",
-      image: "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=400&q=80",
+      image: "/images/Capitaine-Braise-Casamancais.jfif",
     },
     {
       name: "Brochettes de Crevettes & Poisson",
       description: "Brochettes mixtes crevettes-merou, sauce creme fraiche citronnee, manioc frit",
       priceFCFA: 7000,
       priceEUR: "10,50",
-      image: "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=400&q=80",
+      image: "/images/Brochettes-de-Crevettes.webp",
     },
     {
       name: "Thieb Dieun Blanc",
       description: "Riz blanc au poisson frais, legumes mijotes, bouillon parfume",
       priceFCFA: 3500,
       priceEUR: "5",
-      image: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=400&q=80",
+      image: "/images/Thieb-Dieun-Blanc.jfif",
     },
   ],
   viandes: [
@@ -160,21 +160,21 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
       priceFCFA: 4500,
       priceEUR: "7",
       badge: "incontournable",
-      image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&q=80",
+      image: "/images/Yassa-poulet.jpg",
     },
     {
       name: "Mafe Boeuf",
       description: "Boeuf mijote en sauce arachide onctueuse, riz blanc ou fonio",
       priceFCFA: 5000,
       priceEUR: "7,50",
-      image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80",
+      image: "/images/poulet-mafe-senegalais-sauce-arachide.jpg",
     },
     {
       name: "Poulet Roti Local",
       description: "Poulet fermier roti aux herbes et epices de Casamance, frites maison",
       priceFCFA: 5500,
       priceEUR: "8",
-      image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&q=80",
+      image: "/images/poulet-roti.jpg",
     },
     {
       name: "Dibi Casamancais",
@@ -182,14 +182,14 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
       priceFCFA: 5500,
       priceEUR: "8",
       badge: "specialite",
-      image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80",
+      image: "/images/dibi-casamancais.jpg",
     },
     {
       name: "Brochettes de Boeuf",
       description: "Brochettes marinees aux epices, grillees au feu de bois, frites maison",
       priceFCFA: 4000,
       priceEUR: "6",
-      image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80",
+      image: "/images/Brochettes-de-Boeuf.webp",
     },
   ],
   accompagnements: [
@@ -203,11 +203,11 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
   desserts: [
     {
       name: "Douceur de Casamance",
-      description: "Creme de coco, mangue fraiche, caramel de palme — dessert signature maison",
+      description: "Creme de coco, mangue fraiche, caramel de palme, dessert signature maison",
       priceFCFA: 2000,
       priceEUR: "3",
       badge: "signature",
-      image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80",
+      image: "/images/douceur-casamance.jpg",
     },
     {
       name: "Banane Flambee",
@@ -215,14 +215,14 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
       priceFCFA: 2000,
       priceEUR: "3",
       badge: "coup-de-coeur",
-      image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=80",
+      image: "/images/banane-flambée.webp",
     },
     {
       name: "Salade de Fruits Frais",
-      description: "Mangue, papaye, ananas, pasteque — fruits tropicaux de saison",
+      description: "Mangue, papaye, ananas, pasteque et fruits tropicaux de saison",
       priceFCFA: 1500,
       priceEUR: "2,50",
-      image: "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=400&q=80",
+      image: "/images/salade-de-fruit-frais.jpg",
     },
     {
       name: "Thiakry",
@@ -230,14 +230,14 @@ const menuItems: Record<MenuCategory, MenuItem[]> = {
       priceFCFA: 1500,
       priceEUR: "2,50",
       badge: "traditionnel",
-      image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80",
+      image: "/images/thiakry.jpg",
     },
     {
       name: "Glace Artisanale",
       description: "2 boules au choix : vanille, chocolat, coco, mangue",
       priceFCFA: 1000,
       priceEUR: "1,50",
-      image: "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=400&q=80",
+      image: "/images/glacier-artisanale.jpeg",
     },
   ],
   boissons: [
@@ -326,7 +326,6 @@ export function RestaurantMenu() {
             transition={{ duration: 0.3 }}
           >
             {activeCategory === "accompagnements" || activeCategory === "boissons" ? (
-              // Compact grid for accompaniments and drinks
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {menuItems[activeCategory].map((item, index) => (
                   <motion.div
@@ -355,7 +354,6 @@ export function RestaurantMenu() {
                 ))}
               </div>
             ) : (
-              // Card grid with images for main dishes
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {menuItems[activeCategory].map((item, index) => (
                   <motion.div

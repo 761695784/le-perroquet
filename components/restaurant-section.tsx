@@ -116,13 +116,13 @@ export function RestaurantSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
-                href="#contact"
+                href="/restaurant#notre-carte"
                 className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-3 rounded-full text-center font-semibold transition-colors border border-white/20"
               >
                 Voir le menu complet
               </Link>
               <Link
-                href="#reservation"
+                href="/restaurant#reserver-table"
                 className="bg-golden-amber hover:bg-golden-amber/90 text-white px-6 py-3 rounded-full text-center font-semibold transition-colors"
               >
                 Réserver une table
